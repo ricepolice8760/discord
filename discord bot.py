@@ -1,5 +1,5 @@
-import discord, asyncio, random, youtube_dl
-
+import discord, asyncio, random
+import os
 
 
 client = discord.Client()
@@ -112,4 +112,6 @@ async def on_message(message, discord=None):
     if message.content.startswith("투명댓글"):
         await message.channel.send("﻿")
 
-client.run("ODQxOTUxNjczMjE5OTQwMzYz.YJuOmQ.HiRIUOERxkQRgocqp2aMN1bUa4s")
+        
+access_token - os.environ["BOT_TOKEN"]        
+client.run(access_token)
